@@ -1,0 +1,57 @@
+{
+  "sources": [
+    {
+      "id": 1,
+      "name": "Associated Press",
+      "url": "https://www.apnews.com",
+      "bias": "center",
+      "reliability": "high",
+      "type": "wire-service"
+    },
+    {
+      "id": 2,
+      "name": "NPR",
+      "url": "https://www.npr.org",
+      "bias": "center-left",
+      "reliability": "high",
+      "type": "public"
+    },
+    {
+      "id": 3,
+      "name": "The Hill",
+      "url": "https://thehill.com",
+      "bias": "center",
+      "reliability": "medium",
+      "type": "political"
+    },
+    {
+      "id": 4,
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com",
+      "bias": "center-left",
+      "reliability": "high",
+      "type": "international"
+    },
+    {
+      "id": 5,
+      "name": "Fox News",
+      "url": "https://www.foxnews.com",
+      "bias": "right",
+      "reliability": "medium",
+      "type": "cable"
+    }
+  ],
+  "biasScale": {
+    "left": -2,
+    "center-left": -1,
+    "center": 0,
+    "center-right": 1,
+    "right": 2
+  },
+  "reliabilityScale": {
+    "low": 1,
+    "medium": 2,
+    "high": 3
+  },
+  "updateFrequency": "hourly"
+}

@@ -8,12 +8,13 @@
 
 .news-grid {
   display: grid;
-  grid-template-columns: minmax(0, 4fr) minmax(0, 3fr); /* Adjusted ratio to make main column smaller */
+  grid-template-columns: repeat(3, 1fr); /* Changed to 3 equal columns */
   gap: 1.5rem;
 }
 
-/* Left side with headline */
+/* Main story spans 2 columns */
 .main-story {
+  grid-column: span 2;
   display: flex;
   flex-direction: column;
 }
@@ -43,7 +44,7 @@
   margin: 0;
 }
 
-/* Right side stories */
+/* Side stories take the third column */
 .side-stories {
   display: flex;
   flex-direction: column;
@@ -119,13 +120,14 @@
     grid-template-columns: 1fr;
   }
   
-  .headline-story img {
-    height: 360px;
+  .main-story {
+    grid-column: span 1;
   }
   
   .side-stories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
   
   .side-stories .news-item img {
